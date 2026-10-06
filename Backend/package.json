@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "db:up": "docker compose up -d",
+    "db:down": "docker compose down"
   },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -20,6 +24,7 @@
   "dependencies": {
     "crypto": "^1.0.1",
     "drizzle-orm": "^0.45.3",
+    "express": "^5.2.1",
     "joi": "^18.2.9",
     "jsonwebtoken": "^9.0.3",
     "jwt": "^0.2.0",
